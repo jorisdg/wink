@@ -17,6 +17,7 @@
 [Rr]eleases/
 x64/
 x86/
+[Aa][Rr][Mm]
 bld/
 [Bb]in/
 [Oo]bj/
@@ -250,3 +251,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+/CodeCrib.Wink.UWP/Secrets

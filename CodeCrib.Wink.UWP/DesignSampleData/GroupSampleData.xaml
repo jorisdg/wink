@@ -1,0 +1,4 @@
+﻿<s:ArrayList xmlns:s="using:System.Collections"  xmlns:m="using:CodeCrib.Wink" >
+    <m:Group m:Name="Test Group" CheckBoxPowered="True" />
+    <m:Group m:Name="Test Group 2" CheckBoxPowered="False" />
+</s:ArrayList>

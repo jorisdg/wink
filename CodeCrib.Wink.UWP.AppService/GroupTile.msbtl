@@ -1,0 +1,96 @@
+{
+  "$type": "DesignerContents",
+  "DesignerState": {
+    "$type": "DesignerState",
+    "BandLayout": {
+      "$type": "BandLayout",
+      "Version": {
+        "$type": "Version",
+        "Major": 2,
+        "Build": -1,
+        "Revision": -1
+      },
+      "BandTheme": {
+        "$type": "Theme",
+        "Base": "R: 51, G: 102, B: 204",
+        "HighContrast": "R: 58, G: 120, B: 221",
+        "Highlight": "R: 58, G: 120, B: 221",
+        "Lowlight": "R: 49, G: 101, B: 186",
+        "Muted": "R: 43, G: 90, B: 165",
+        "SecondaryText": "R: 137, G: 151, B: 171"
+      },
+      "TileTheme": {
+        "$type": "Theme",
+        "Base": "R: 51, G: 102, B: 204",
+        "HighContrast": "R: 58, G: 120, B: 221",
+        "Highlight": "R: 58, G: 120, B: 221",
+        "Lowlight": "R: 49, G: 101, B: 186",
+        "Muted": "R: 43, G: 90, B: 165",
+        "SecondaryText": "R: 137, G: 151, B: 171"
+      },
+      "RootPanel": {
+        "$type": "FilledPanel",
+        "Elements": {
+          "$type": "Elements",
+          "$values": [
+            {
+              "$type": "TextBlock",
+              "ColorSource": 2,
+              "Color": "R: 255, G: 255, B: 255",
+              "Text": "Default Group Name",
+              "Name": "",
+              "ElementId": 2,
+              "Id": "a63ac7d6-c373-4599-9600-9ff78cedf0ce",
+              "Left": 15,
+              "Width": 243,
+              "Height": 30,
+              "VerticalAlignment": 1,
+              "Visible": true
+            },
+            {
+              "$type": "TextBlock",
+              "Font": 2,
+              "Color": "R: 255, G: 255, B: 255",
+              "Text": "On",
+              "Name": "",
+              "ElementId": 4,
+              "Id": "6f64b831-8144-4618-b52a-a947ef633b9b",
+              "Left": 73,
+              "Top": 65,
+              "Width": 185,
+              "Height": 48,
+              "Visible": true
+            },
+            {
+              "$type": "Icon",
+              "ColorSource": 2,
+              "Color": "R: 255, G: 255, B: 255",
+              "Source": "ms-appx:///Assets/Light.png",
+              "Name": "",
+              "ElementId": 3,
+              "Id": "944928b8-4b8a-4037-97ce-a9f216c17b0b",
+              "Left": 15,
+              "Top": 65,
+              "Width": 48,
+              "Height": 48,
+              "Visible": true
+            }
+          ]
+        },
+        "Name": "",
+        "ElementId": 1,
+        "Id": "0beb0794-3f90-450a-9a42-291d9b602103",
+        "Width": 248,
+        "Height": 128,
+        "Visible": true
+      }
+    },
+    "SelectedElements": {
+      "$type": "IdList",
+      "$values": [
+        "a63ac7d6-c373-4599-9600-9ff78cedf0ce"
+      ]
+    }
+  },
+  "ZoomPercent": 100.0
+}
