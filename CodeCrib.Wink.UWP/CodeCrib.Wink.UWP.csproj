@@ -149,7 +149,7 @@
       <Project>{d13782e0-0937-49c6-8a3f-70564f52b6f5}</Project>
       <Name>CodeCrib.Wink.Lib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CodeCrib.Wink.UWP.AppService\CodeCrib.Wink.UWP.Band.csproj">
+    <ProjectReference Include="..\CodeCrib.Wink.UWP.Band\CodeCrib.Wink.UWP.Band.csproj">
       <Project>{0d8784e8-7b53-4924-9fea-b701a72cfb07}</Project>
       <Name>CodeCrib.Wink.UWP.Band</Name>
     </ProjectReference>

@@ -45,15 +45,18 @@ namespace CodeCrib.Wink.UWP
         {
             Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
 
-            if (this.wink != null && this.wink.oAuth != null)
+            if (this.wink != null)
             {
-                localSettings.Values["ot"] = this.wink.oAuth.Token;
-                localSettings.Values["rt"] = this.wink.oAuth.RefreshToken;
-            }
-            else
-            {
-                localSettings.Values["ot"] = "";
-                localSettings.Values["rt"] = "";
+                if (this.wink.oAuth != null)
+                {
+                    localSettings.Values["ot"] = this.wink.oAuth.Token;
+                    localSettings.Values["rt"] = this.wink.oAuth.RefreshToken;
+                }
+                else
+                {
+                    localSettings.Values["ot"] = "";
+                    localSettings.Values["rt"] = "";
+                }
             }
         }
 
