@@ -1,6 +1,4 @@
-﻿using Microsoft.Band;
-using Microsoft.Band.Tiles;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -171,21 +169,6 @@ namespace CodeCrib.Wink.UWP
         private void Refresh_Click(object sender, RoutedEventArgs e)
         {
             this.RefreshWink();
-        }
-
-        private async void BandTile_Click(object sender, RoutedEventArgs e)
-        {
-            //CodeCrib.Wink.UWP.Band.WinkTile winkTile = new Band.WinkTile(StatusText);
-            StatusText.Text = "Installing Band Tile";
-
-            if (await CodeCrib.Wink.UWP.Band.WinkTile.InstallTile())
-            {
-                StatusText.Text = "Successfully installed Band Tile";
-            }
-            else
-            {
-                StatusText.Text = "Failed to install Band Tile";
-            }
         }
 
         private async void Login_Click(object sender, RoutedEventArgs e)

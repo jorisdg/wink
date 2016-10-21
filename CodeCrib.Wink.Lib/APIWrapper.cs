@@ -85,18 +85,30 @@ namespace CodeCrib.Wink.Lib
             httpClient = new HttpClient { BaseAddress = baseAddress };
         }
 
-        public void Dispose()
+        bool disposed = false;
+
+        protected void Dispose(bool disposing)
         {
-            if (httpClient != null)
+            if (disposed)
+                return;
+
+            if (disposing)
             {
                 httpClient.Dispose();
-                httpClient = null;
             }
+
+            disposed = true;
+        }
+
+        public void Dispose()
+        {
+            this.Dispose(true);
+            GC.SuppressFinalize(this);
         }
 
         ~APIWrapper()
         {
-            this.Dispose();
+            this.Dispose(false);
         }
 
         async protected Task<string> GetResponse(HttpResponseMessage response)

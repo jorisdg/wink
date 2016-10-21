@@ -15,10 +15,9 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Name="Logout" Content="Logout" Margin="5" Click="Logout_Click" />
-            <Button Name="BandTile" Content="Install Band Tile" Margin="5" Click="BandTile_Click" />
             <Button Name="Refresh" Content="Refresh" Click="Refresh_Click" Margin="5" />
         </StackPanel>
-        <Grid Grid.Row="1" x:Name="LoginGrid" HorizontalAlignment="Stretch" Margin="10">
+        <Grid Grid.Row="1" x:Name="LoginGrid" HorizontalAlignment="Stretch" Margin="10" Visibility="Collapsed">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
@@ -36,7 +35,7 @@
             <TextBox Grid.Row="2" Grid.Column="1" x:Name="Password" />
             <Button Grid.Row="3" Grid.ColumnSpan="2" Name="Login" Content="Login" HorizontalAlignment="Stretch" Click="Login_Click" />
         </Grid>
-        <Pivot Grid.Row="1" x:Name="WinkPivot" Visibility="Collapsed">
+        <Pivot Grid.Row="1" x:Name="WinkPivot" Visibility="Visible">
             <PivotItem Header="Groups">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -88,8 +87,8 @@
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock Grid.Column="0" Text="{Binding Type}" />
-                                    <TextBlock Grid.Column="1" Text="{Binding Name}" />
+                                    <TextBlock Grid.Column="0" Text="{Binding Type}" Margin="15 0 0 0" />
+                                    <TextBlock Grid.Column="1" Text="{Binding Name}" Margin="15 0 0 0" />
                                     <CheckBox Name="DevicePowered" Grid.Column="2" IsChecked="{Binding Powered}" IsEnabled="{Binding Connected}" Click="DevicePowered_Click" />
                                 </Grid>
                             </DataTemplate>

@@ -25,18 +25,18 @@ namespace CodeCrib.Wink.Lib
             if (!string.IsNullOrEmpty(deviceId))
             {
                 device.Id = (string)deviceToken.SelectToken(deviceId);
-                device.Type = deviceId.Substring(0, deviceId.Length - 3);
             }
 
+            device.Type = (string)deviceToken.SelectToken("object_type");
             device.Name = (string)deviceToken.SelectToken("name");
             device.Model = (string)deviceToken.SelectToken("model_name");
 
             JToken lastReading = deviceToken.SelectToken("last_reading");
             device.Connected = (bool)lastReading.SelectToken("connection");
 
-            JToken desiredState = deviceToken.SelectToken("desired_state");
+            //JToken desiredState = deviceToken.SelectToken("desired_state");
 
-            JToken poweredToken = desiredState.SelectToken("powered");
+            JToken poweredToken = lastReading.SelectToken("powered");
             if (device.Connected == true && poweredToken != null)
             {
                 device.Powered = poweredToken.Value<bool>();
