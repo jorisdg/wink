@@ -1,4 +1,0 @@
-﻿<s:ArrayList xmlns:s="using:System.Collections"  xmlns:m="using:CodeCrib.Wink" >
-    <m:Device m:Name="Device 1" Type="hub" />
-    <m:Device m:Name="Device 2" Type="light_bulb" Powered="True" />
-</s:ArrayList>
